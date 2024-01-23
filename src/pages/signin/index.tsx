@@ -1,5 +1,6 @@
 import { Input } from '../../components/input/index.tsx'
 import { Button } from '../../components/button/index.tsx'
+import { Link } from 'react-router-dom'
  
 import { Container, Form } from './styles.ts'
 
@@ -24,7 +25,7 @@ export function Signin(){
                 </div>
                 <Button name={'Criar conta'}/>
 
-                <a href="">Criar uma conta</a>
+                <Link to="signup">Criar uma conta</Link>
             </Form>
         </Container>
     )
