@@ -15,13 +15,12 @@ export function Signin(){
                 <h1>Faça login</h1>
                 <div className='div-input'>
                     <p>Email</p>
-                    <Input name={'Exemplo: exemplo@exemplo.com.br'} />
+                    <Input name={'Exemplo: exemplo@exemplo.com.br'} minLength={0} />
                 </div>
                 <div className='div-input senha'>
                     <p>Senha</p>
                     <Input 
-                    name={'No mínimo 6 caracteres'}
-                    />
+                        name={'No mínimo 6 caracteres'} minLength={6}/>
                 </div>
                 <Button name={'Criar conta'}/>
 
